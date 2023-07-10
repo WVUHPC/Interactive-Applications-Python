@@ -1,6 +1,7 @@
 ---
-title: "Introduction"
-teaching: 0
+title: "Matplotlib Widgets"
+start: 600 
+teaching: 60
 exercises: 0
 questions:
 - "Key question (FIXME)"
