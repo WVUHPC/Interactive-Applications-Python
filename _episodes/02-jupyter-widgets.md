@@ -1,10 +1,9 @@
 ---
-title: "Matplotlib Widgets"
-start: 600 
+title: "Jupyter Widgets"
 teaching: 60
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "Jupyter Notebooks come alive with jupyter widgets"
 objectives:
 - "First learning objective. (FIXME)"
 keypoints:

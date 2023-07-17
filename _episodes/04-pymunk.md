@@ -3,7 +3,7 @@ title: "PyMunk"
 teaching: 60
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "Pythonic 2d physics library for physics demos"
 objectives:
 - "First learning objective. (FIXME)"
 keypoints:

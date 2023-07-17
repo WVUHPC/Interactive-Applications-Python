@@ -4,7 +4,7 @@ start: 600
 teaching: 60
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "3D plotting and mesh analysis with Python"
 objectives:
 - "First learning objective. (FIXME)"
 keypoints:
