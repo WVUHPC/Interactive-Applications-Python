@@ -28,4 +28,8 @@ These four packages are just a small selection of a wider set of packages that c
 > The examples are inspired by high-school to college-level math, chemistry, and physics. They serve the purpose to illustrate the possibilities not to teach you advanced topics.
 {: .prereq}
 
+<h2 text-align="center">
+<a href="https://wvuhpc.github.io/Interactive_Applications_Python">Workshop Webpage</a> 
+</h2>
+
 {% include links.md %}
