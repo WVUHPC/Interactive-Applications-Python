@@ -23,9 +23,28 @@ These four packages are just a small selection of a wider set of packages that c
 >
 > This workshop assumes that you have some familiarity with Python Programming.
 > Even if your primary language is not Python, the code is easy to follow.
-> The examples in these lessons are kept simple on purpose to show you the capabilities of these packages without getting lost with large source code that will divert you from grasping the practical routines that these packages have to offer.
+> The examples in these lessons are kept simple on purpose to show you the capabilities of these packages without getting lost in large source code that will divert you from grasping the practical routines that these packages have to offer.
 > 
-> The examples are inspired on high-school to college level math, chemistry and physics. They serve the purpose to illustrate the possibilities not to teach you advanced topics.
+> The examples are inspired by high-school to college-level math, chemistry, and physics. They serve the purpose to illustrate the possibilities not to teach you advanced topics.
 {: .prereq}
+
+**Testing LaTeX support in the (Lesson/Workshop) The Cauchy-Schwarz Inequality**
+
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
+<p id="This_Is_What_I_Want"> $$ (a-b)^2 $$</p>
+<p id="First_Input"> <input id="Value_A"></p>
+<p id="Second_Input"> <input id="Value_B"></p>
+<p id="Output"></p>
+<p id="Activate"><button onclick="RUN()">Test This out</button></p>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML,http://myserver.com/MathJax/config/local/local.js">
+        function RUN() {
+            var a = document.getElementById("Value_A").value
+            var b = document.getElementById("Value_B").value
+            document.getElementById("Output").innerHTML = "$$ (" + a + "-" + b + ")^2 $$";
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+        }
+</script>
+
 
 {% include links.md %}
