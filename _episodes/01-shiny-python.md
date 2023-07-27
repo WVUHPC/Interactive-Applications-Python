@@ -638,9 +638,29 @@ To define the logic for an output, create a function with no parameters whose na
 As the function is inside the ``server`` and the server has input and output objects, these objects are visible inside the server.
 However, input values can not be read at the top level of the server function. If you try to do that, you’ll get an error that says RuntimeError: No current reactive context. The input values are reactive and, as the error suggests, are only accessible within reactive code. 
 
-Consider this example:
+Consider this example (``17.server_logic/app.py`):
+    
+    from shiny import App, render, ui
+    
+    app_ui = ui.page_fluid(
+        ui.input_checkbox("enable", "Enable?"),
+        ui.h3("Is it enabled?"),
+        ui.output_text_verbatim("txt"),
+    )
+    
+    def server(input, output, session):
+        @output
+        @render.text
+        def txt():
+            if input.enable():
+                return "Yes!"
+            else:
+                return "No!"
+    
+    app = App(app_ui, server)
 
 
+When you define an output function, Shiny makes it reactive, and so it can be used to access input values.
 
 
 {% include links.md %}
